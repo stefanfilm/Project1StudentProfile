@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 Profile</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
     <link rel="stylesheet" href="./assets/css/styles.css">
-
 </head>
 
 <body>
@@ -42,18 +45,19 @@
             </div>
             <div>
                 <label>Location</label>
-                <input>
-                <button>Submit</button>
+                <input id="location-input">
+                <button id="location-button">Submit</button>
+                <div id="map"></div>
             </div>
             <div>
                 <label>Occupation</label>
-                <input>
+                <input type="text">
                 <button>Submit</button>
             </div>
             <div>
                 <label>Birthday</label>
-                <input>
-                <button>Submit</button>
+                <input type="text" id="datepicker" class="form-control" autocomplete="off">
+                <!-- <button>Submit</button> -->
             </div>
         </div>
     </section>
@@ -69,11 +73,10 @@
     <section id="favorites">
         <div class="section-detail">
             <h2 class="section-title primary-border">Favorites</h2>
-
             <div>
                 <label>Movie</label>
-                <input>
-                <button>Submit</button>
+                <input id="movie-input">
+                <button id="movie-button">Submit</button>
             </div>
             <div>
                 <label>Game</label>
@@ -127,7 +130,14 @@
             </div>
         </div>
     </section>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
-<script src="./assets/js/script.js"></script>
+
+
 
 </html>

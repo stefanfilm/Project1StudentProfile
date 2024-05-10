@@ -36,6 +36,8 @@ header nav {
     font-size: 24px;
     display: flex;
     justify-content: flex-end;
+    z-index: 100;
+
     
     
 }
@@ -135,3 +137,5 @@ img {
     color: #ffffff;
     background-color: var(--tertiary-color);
 }
+
+#map { height: 180px; }
