@@ -114,75 +114,124 @@ movieBtn.addEventListener("click", async function () {
         console.error('Error fetching movie data:', error);
     }
 });
-//     const location = locationInput.value;
-//     const apiKey = 'a9e4876ac5msh5913a16c450d015p14e919jsnc4eb0aa15f4e';
-//     const url = `https://map-places.p.rapidapi.com/photo?photo_reference=${location}&maxheight=1600&maxwidth=1600`;
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': 'a9e4876ac5msh5913a16c450d015p14e919jsnc4eb0aa15f4e',
-// 		'X-RapidAPI-Host': 'map-places.p.rapidapi.com'
-// 	}
-// };
-    // const url = `https://map-places.p.rapidapi.com/findplacefromtext/json?input=${location}&inputtype=textquery&fields=formatted_address%2Cname%2Crating%2Copening_hours%2Cgeometry`;
-    // fetch(url)
-    //     .then(function (response) {
-    //         return response.json();   
-    //     })
-    //     .then(function(data){
-    //         console.log(data)
-    //     })
-// })
 
-    // const options = {
-    //     method: 'GET',
-    //     headers: {
-    //         'X-RapidAPI-Key': 'a9e4876ac5msh5913a16c450d015p14e919jsnc4eb0aa15f4e',
-    //         'X-RapidAPI-Host': 'map-places.p.rapidapi.com'
-    //     }
-    // };
+//Occupation Function 
+document.addEventListener("DOMContentLoaded", function() {
+    const occupationBtn = document.getElementById("occupation-btn");
+    const occupationInput = document.getElementById("occupation-input");
+    const occupationLabel = document.getElementById("occupation-label")
+    occupationBtn.addEventListener("click", function() {
+        if (occupationBtn.textContent === "Submit") {
+            if (occupationInput.value.trim() !== "") {
+                occupationLabel.textContent = occupationInput.value;
+                occupationInput.style.display = "none";
+                occupationBtn.textContent = "Edit";
+            } 
+        } else if (occupationBtn.textContent === "Edit") {
+            occupationLabel.textContent = "";
+            occupationInput.style.display = "";
+            occupationBtn.textContent = "Submit";
+        }
+    })
+})
 
-    // try {
-    //     const response = await fetch(url, options);
-    //     const result = await response.text();
-    //     console.log(result);
-    // } catch (error) {
-    //     console.error(error);
-    // }})
+//Age Function 
+document.addEventListener("DOMContentLoaded", function() {
+    const ageBtn = document.getElementById("age-btn");
+    const ageInput = document.getElementById("age-input");
+    const ageLabel = document.getElementById("age-label")
+    ageBtn.addEventListener("click", function() {
+        if (ageBtn.textContent === "Submit") {
+            if (ageInput.value.trim() !== "") {
+                ageLabel.textContent = ageInput.value;
+                ageInput.style.display = "none";
+                ageBtn.textContent = "Edit";
+            } 
+        } else if (ageBtn.textContent === "Edit") {
+            ageLabel.textContent = "";
+            ageInput.style.display = "";
+            ageBtn.textContent = "Submit";
+        }
+    })
+})
+//About Me Function 
+document.addEventListener("DOMContentLoaded", function() {
+    const aboutMeBtn = document.getElementById("aboutme-btn");
+    const aboutMeInput = document.getElementById("aboutme-input");
+    const aboutMeLabel = document.getElementById("aboutme-label")
+    aboutMeBtn.addEventListener("click", function() {
+        if (aboutMeBtn.textContent === "Submit") {
+            if (aboutMeInput.value.trim() !== "") {
+                aboutMeLabel.textContent = aboutMeInput.value;
+                aboutMeInput.style.display = "none";
+                aboutMeBtn.textContent = "Edit";
+            } 
+        } else if (aboutMeBtn.textContent === "Edit") {
+            aboutMeLabel.textContent = "";
+            aboutMeInput.style.display = "";
+            aboutMeBtn.textContent = "Submit";
+        }
+    })
+})
 
+//Book Function 
+document.addEventListener("DOMContentLoaded", function() {
+    const bookBtn = document.getElementById("book-btn");
+    const bookInput = document.getElementById("book-input");
+    const bookLabel = document.getElementById("book-label")
+    bookBtn.addEventListener("click", function() {
+        if (bookBtn.textContent === "Submit") {
+            if (bookInput.value.trim() !== "") {
+                bookLabel.textContent = bookInput.value;
+                bookInput.style.display = "none";
+                bookBtn.textContent = "Edit";
+            } 
+        } else if (bookBtn.textContent === "Edit") {
+            bookLabel.textContent = "";
+            bookInput.style.display = "";
+            bookBtn.textContent = "Submit";
+        }
+    })
+})
 
-//     const location = locationInput.value;
-//     const apiKey = 'a9e4876ac5msh5913a16c450d015p14e919jsnc4eb0aa15f4e';
-//     const url = `https://map-places.p.rapidapi.com/photo?photo_reference=${location}&maxheight=1600&maxwidth=1600`;
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': 'a9e4876ac5msh5913a16c450d015p14e919jsnc4eb0aa15f4e',
-// 		'X-RapidAPI-Host': 'map-places.p.rapidapi.com'
-// 	}
-// };
-    // const url = `https://map-places.p.rapidapi.com/findplacefromtext/json?input=${location}&inputtype=textquery&fields=formatted_address%2Cname%2Crating%2Copening_hours%2Cgeometry`;
-    // fetch(url)
-    //     .then(function (response) {
-    //         return response.json();   
-    //     })
-    //     .then(function(data){
-    //         console.log(data)
-    //     })
-// })
+//Artist Function 
+document.addEventListener("DOMContentLoaded", function() {
+    const artistBtn = document.getElementById("artist-btn");
+    const artistInput = document.getElementById("artist-input");
+    const artistLabel = document.getElementById("artist-label")
+    artistBtn.addEventListener("click", function() {
+        if (artistBtn.textContent === "Submit") {
+            if (artistInput.value.trim() !== "") {
+                artistLabel.textContent = artistInput.value;
+                artistInput.style.display = "none";
+                artistBtn.textContent = "Edit";
+            } 
+        } else if (artistBtn.textContent === "Edit") {
+            artistLabel.textContent = "";
+            artistInput.style.display = "";
+            artistBtn.textContent = "Submit";
+        }
+    })
+})
 
-    // const options = {
-    //     method: 'GET',
-    //     headers: {
-    //         'X-RapidAPI-Key': 'a9e4876ac5msh5913a16c450d015p14e919jsnc4eb0aa15f4e',
-    //         'X-RapidAPI-Host': 'map-places.p.rapidapi.com'
-    //     }
-    // };
+//Artist Function 
+document.addEventListener("DOMContentLoaded", function() {
+    const mealBtn = document.getElementById("meal-btn");
+    const mealInput = document.getElementById("meal-input");
+    const mealLabel = document.getElementById("meal-label")
+    mealBtn.addEventListener("click", function() {
+        if (mealBtn.textContent === "Submit") {
+            if (mealInput.value.trim() !== "") {
+                mealLabel.textContent = mealInput.value;
+                mealInput.style.display = "none";
+                mealBtn.textContent = "Edit";
+            } 
+        } else if (mealBtn.textContent === "Edit") {
+            mealLabel.textContent = "";
+            mealInput.style.display = "";
+            mealBtn.textContent = "Submit";
+        }
+    })
+})
 
-    // try {
-    //     const response = await fetch(url, options);
-    //     const result = await response.text();
-    //     console.log(result);
-    // } catch (error) {
-    //     console.error(error);
-    // }})
+   
