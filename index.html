@@ -29,111 +29,128 @@
     </header>
     <section id="Name">
         <div class="section-detail">
-        <h2 class="section-title primary-border">Name</h2>
-        <div class="profile picture">
-            <h2></h2>
-            <input class="input-style">
-            <img src=>
+            <div id="profile-picture">
+                <img id="profile-pic">
+                <input type="file" id="upload" onchange="_ReadImage(event)" />
+                <div id="status" ></div>
+                <label id="name-label">Enter Your Name</label>
+                <input class="input-style" type="text" id="name-input">
+                <button class="button is-link" id="name-btn">Submit</button>
+                </div>
         </div>
-       </div>
+        <!-- <div id="name-section" class="section-detail section-title primary-border">
+            <label id="name-label">Enter Your Name</label>
+            <input class="input-style ml-6" type="text" id="name-input">
+            <button class="button is-link" id="name-btn">Submit</button>
+        </div> -->
+
+        </div>
     </section>
     <section id="basic-info">
         <div class="section-detail">
             <h2 class="section-title primary-border">Basic Info</h2>
-        <div class="basic-info-group mb-3">    
-            <div id="age" class="mb-3">
-                <label id="age-label">Age</label>
-                <input class="input-style" type="number" id="age-input">
-                <button class="button is-link" id="age-btn">Submit</button>
+            <div class="basic-info-group">
+                <div id="age">
+                    <label id="age-label">Age</label>
+                    <input class="input-style mb-4" type="number" min="0" id="age-input">
+                    <button class="button is-link" id="age-btn">Submit</button>
+                </div>
+                <div id="birthday-section" class="birthday-date">
+                    <label id="birthday-label">Birthday</label>
+                    <input type="text" id="datepicker" class="form-control input-style mb-4" autocomplete="off">
+                    <button class="button is-link" id="birthday-btn">Submit</button>
+                </div>
+
+                <!-- HTML - Update Occupation div to read: -->
+                <div id="occupation-section">
+                    <label id="occupation-label">Occupation</label>
+                    <input class="input-style mb-4" type="text" id="occupation-input">
+                    <button class="button is-link" id="occupation-btn">Submit</button>
+                </div>
+                <div class="location mb-4">
+                    <label>Location</label>
+                    <button class="button is-link" id="location-button">Submit</button>
+                    <div id="map"></div>
+                </div>
             </div>
-            <div class="birthday-date mb-3">
-                <label>Birthday</label>
-                <input type="text" id="datepicker" class="form-control input-style" autocomplete="off">
-                <!-- <button>Submit</button> -->
-            </div>
-            <!-- HTML - Update Occupation div to read: -->
-            <div id="occupation-section" class="mb-3">
-                <label id="occupation-label">Occupation</label>
-                <input class="input-style" type="text" id="occupation-input">
-                <button class="button is-link" id="occupation-btn">Submit</button>
-            </div>
-            <div class="location mb-3" >
-                <label>Location</label>
-                <input class="input-style" id="location-input">
-                <button class="button is-link" id="location-button">Submit</button>
-                <div id="map"></div>
-            </div>
-        </div>    
-            
+
     </section>
     <section id="about-me">
         <div class="section-detail">
             <h2 class="section-title primary-border">About Me</h2>
             <div id="aboutme-section">
-                <label id="aboutme-label">About</label>
+                <!-- <label id="aboutme-label">About</label> -->
                 <textarea class="text-style" rows="5" cols="25" id="aboutme-input" name="aboutme" required></textarea>
                 <!-- <input type="text" id="aboutme-input"> -->
                 <button class="button is-link" id="aboutme-btn">Submit</button>
             </div>
+        </div>
     </section>
     <section id="favorites">
         <div class="section-detail">
             <h2 class="section-title primary-border">Favorites</h2>
-        <div class="favorites-group">  
-            <div>
-                <label>Movie</label>
-                <input class="input-style mb-3" id="movie-input">
-                <button class="button is-link" id="movie-button">Submit</button>
-                <div id="movie-title"></div>
-                <div id="movie-img"></div>
-            </div>
-            <div id="book-section">
-                <label id="book-label">Books</label>
-                <input class="input-style mb-3" type="text" id="book-input">
-                <button class="button is-link" id="book-btn">Submit</button>
-            </div>
-            <div id="artist-section">
-                <label id="artist-label">Artist</label>
-                <input class="input-style mb-3" type="text" id="artist-input">
-                <button class="button is-link" id="artist-btn">Submit</button>
-            </div>
-            <div id="meal-section">
-                <label id="meal-label">Favorite Meal</label>
-                <input class="input-style mb-3" type="text" id="meal-input">
-                <button class="button is-link" id="meal-btn">Submit</button>
-            </div>
+            <div class="favorites-group">
+                <div class="movie-section">
+                    <label>Movie</label>
+                    <input class="input-style mb-4" id="movie-input">
+                    <button class="button is-link" id="movie-button">Submit</button>
+                    <div id="movie-title"></div>
+                    <div id="movie-img" class="movie-image"></div>
+                </div>
+                <div id="book-section">
+                    <label id="book-label">Book</label>
+                    <input class="input-style mb-4" type="text" id="book-input">
+                    <button class="button is-link" id="book-btn">Submit</button>
+                </div>
+                <div id="artist-section">
+                    <label id="artist-label">Artist</label>
+                    <input class="input-style mb-4" type="text" id="artist-input">
+                    <button class="button is-link" id="artist-btn">Submit</button>
+                </div>
+                <div id="meal-section">
+                    <label id="meal-label">Meal</label>
+                    <input class="input-style mb-3" type="text" id="meal-input">
+                    <button class="button is-link" id="meal-btn">Submit</button>
+                </div>
     </section>
-    <!-- <section id="questions">
-        <div class="section-detail">
-            <h2 class="section-title primary-border">Questions</h2>
-
-            <div>
-                <label>Who would you like to meet?</label>
-                <input>
-                <button>Submit</button>
-            </div>
-            <div>
-                <label>What are your goals?</label>
-                <input>
-                <button>Submit</button>
-            </div>
-
-        </div>
-    </section> -->
-    <section id="links">
+    <section id="links-section">
         <div class="section-detail">
             <h2 class="section-title primary-border">Links</h2>
-            <div>
-                <label></label>
-                <input class="input-style">
+            <div class="links-list">
+                <div class="link" id="facebook-link" id="facebook-icon">
+                    <a src="" id="facebook-link-att" target="_blank"><img class="topNavFont social social_facebook"
+                            id="facebook-icon"
+                            src="https://s18955.pcdn.co/wp-content/uploads/2017/11/Facebook-share-icon.png"
+                            alt="facebook logo" width="30" height="30px"></i></a>
+                    <input type="url" class="input-style" id="facebook-input">
+                    <button class="button is-link" id="facebook-button">Submit</button>
+                </div>
+                <div class="link" id="linkedin-link">
+                    <a src="" id="linkedin-link-att" target="_blank"><i class="fa-brands fa-linkedin"
+                            id="linkedin-icon"></i></a>
+                    <input type="url" class="input-style" id="linkedin-input">
+                    <button class="button is-link" id="linkedin-button">Submit</button>
+                </div>
+                <div class="link" id="instagram-link">
+                    <a src="" id="instagram-link-att" target="_blank">
+                        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+                            rel="stylesheet" />
+                        <i class="fa fa-instagram insta" id="instagram-icon" aria-hidden="true"></i>
+                    </a>
+                    <input type="url" class="input-style" id="instagram-input">
+                    <button class="button is-link" id="instagram-button">Submit</button>
+                </div>
             </div>
         </div>
+
+
     </section>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script src="https://kit.fontawesome.com/d2c260ba46.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>

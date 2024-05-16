@@ -1,6 +1,6 @@
 :root {
     --primary-color: blue;
-    --secondary-color:rgb(196, 194, 194);
+    --secondary-color: rgb(56, 53, 53);
     --tertiary-color: black;
 }
 
@@ -17,10 +17,11 @@ body {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    position: -webkit-sticky;
+    /* position: -webkit-sticky;  */
 	position: sticky; 
     height: 50px;
 	top: 0;
+    z-index:1500;
 }
 
 header h1 {
@@ -61,10 +62,10 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
-.profile-pic {
+/* .profile-pic {
     position: relative;
     margin: 12px;
-}
+} */
 
 #main-image img {
     max-width: 100%;
@@ -103,6 +104,12 @@ section {
     padding-bottom: 50px;
     width: 100%;
     display: flex;
+    border-style: outset;
+    border-color:rgb(135, 135, 145);
+    border-width: 6px;
+    border-radius:10px;
+    padding: 5px;
+    background-color: rgb(211, 198, 198);
 }
 
 .section-title {
@@ -112,12 +119,15 @@ section {
     margin-right: 35px;
     color: black;
     text-align: right;
-    padding: 30px;
+    padding: 30px; 
     flex-basis: 25%;
+   
 }
 
 .primary-border {
     border-color: var(--primary-color);
+  
+
 }
 
 .item-detail {
@@ -131,6 +141,10 @@ section {
 
 img {
     border: 5px solid var(--tertiary-color);
+}
+
+#profile-pic{
+    width: 250px;
 }
 
 .bottom-left {
@@ -154,28 +168,42 @@ img {
 .favorites-group{
     display:inline-flexbox
 
-
 }
+
+
 .birthday-date{
     z-index: 100;
 
 }
 
 .location {
-    z-index: 1;
+    /* z-index: 1; */
 }
 
+.movie-section {
+    max-width: 960px;
+    width: 50vw ;
 
-
+}
 
 
 #movie-img{
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-radius: 4px;
     padding: 5px;
-    width: 150px;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin: 8px;
 }
+#movie-img img{
+    width: 150px;
+    margin:4px;
 
+
+
+}
 .input-style {
     border-radius: 20px;
     height:30px;
@@ -185,4 +213,51 @@ img {
     border-radius: 20px;
 }
 
+.link {
+    margin-right: 20px;
+}
+.links-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta {
+    background: radial-gradient(circle at 30% 107%, #FDF497 0%, #FDF497 5%, #FD5949 45%, #D6249F 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            /* Also define standard property for compatibility */
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 100px; /* change this to change the size*/
+  }
+
+  #linkedin-icon{
+    font-size: 30px;
+  }
+
+  #instagram-icon{
+    font-size: 30px;
+  }
+
+  #aboutme-label {
+    text-align: left;
+    
+  }
+
+  #name-label {
+    font-size: 50px;
+    color: #000000;
+}
+
+@media (max-width: 800px) {
+    .links-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .link {
+        margin-bottom: 15px;
+    }
+
+}
 
