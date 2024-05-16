@@ -184,12 +184,3 @@ img {
 .text-style{
     border-radius: 20px;
 }
-
-#insta {
-    background: radial-gradient(circle at 30% 107%, #FDF497 0%, #FDF497 5%, #FD5949 45%, #D6249F 60%, #285AEB 90%);
-    -webkit-background-clip: text;
-            /* Also define standard property for compatibility */
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 40px; /* change this to change the size*/
-  }
