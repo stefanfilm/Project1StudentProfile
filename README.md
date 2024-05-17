@@ -1,5 +1,3 @@
-# Project1StudentProfile
-
 # Student Profile
 
 ## Description
@@ -7,16 +5,16 @@ Our motivation to create this project was to make a page where students could en
 
 ## Deployed Site
 The deployed website can be reached at the following link.
-https://stefanfilm.github.io/Project1StudentProfile/
+https://stefanfilm.github.io/StudentProfile/
 
 ## Installation
-To install the project, pull the code from https://github.com/stefanfilm/Project1StudentProfile and open it in a code editor. Open the script.js or postsscript.js file in the code editor and view the JavaScript. You could open the index.html file in a browser to see the code function.
+To install the project, pull the code from https://github.com/stefanfilm/StudentProfile and open it in a code editor. Open the script.js or postsscript.js file in the code editor and view the JavaScript. You could open the index.html file in a browser to see the code function.
 
 ## Usage
 To use the website, enter text into the various input fields and click submit. Click "choose file" to add a profile picture to your profile. When you click the submit button on the location label, you will see a map showing you where you are based on your IP address. When you enter a movie title to the movie input and click submit, you will see a poster of the movie you chose. If you enter a link to your social media website, once you click submit, you could visit the website by clicking on the icon.
     ```md
-    ![Landing Page](./images/Homepage1.png)
-    ![Landing Page](./images/Homepage2.png)
+    ![Landing Page](./assets/images/Homepage1.png)
+    ![Landing Page](./assets/images/Homepage2.png)
     ```
 ## Credits
 We worked on this project under the instruction of Mark Carlson in the UC Berkeley Software Developer Bootcamp.
