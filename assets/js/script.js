@@ -55,6 +55,26 @@ const long = JSON.parse (coordinate) [1]
     renderLeaflet (lat,long)
 }
 
+// Get the modal
+const modal = document.getElementById("myModal");
+// Get the button that opens the modal
+const btn = document.getElementById("myBtn");
+// Get the <span> element that closes the modal
+const span = document.getElementsByClassName("close")[0];
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 // Check if there is saved movie data in local storage
 const savedMovieDataString = localStorage.getItem('savedMovie');
@@ -174,6 +194,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
 })
+
 //About Me Function 
 document.addEventListener("DOMContentLoaded", function() {
     const aboutMeBtn = document.getElementById("aboutme-btn");
@@ -345,8 +366,7 @@ const _ReadImage = (event) => {
     })
 })
 
-
-//Name 
+//Name Function
 document.addEventListener("DOMContentLoaded", function() {
     const nameBtn = document.getElementById("name-btn");
     const nameInput = document.getElementById("name-input");
@@ -374,7 +394,7 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 })
 
-//Facebook
+//Facebook Function
 document.addEventListener("DOMContentLoaded", function() {
     const fbBtn = document.getElementById("facebook-button");
     const fbInput = document.getElementById("facebook-input");
@@ -409,7 +429,7 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 })
 
-//Linkedin
+//Linkedin Function
 document.addEventListener("DOMContentLoaded", function() {
     const linkedInBtn = document.getElementById("linkedin-button");
     const linkedInInput = document.getElementById("linkedin-input");
@@ -444,7 +464,7 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 })
 
-//Instagram
+//Instagram Function
 document.addEventListener("DOMContentLoaded", function() {
     const instagramBtn = document.getElementById("instagram-button");
     const instagramInput = document.getElementById("instagram-input");
@@ -479,6 +499,7 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 })
 
+//Movie LocalStorage 
 function initApp() {
     const movieCollection = JSON.parse(localStorage.getItem("movieCollection"))
     if (!movieCollection){
@@ -494,3 +515,5 @@ function initApp() {
     })
 }
 initApp()
+
+

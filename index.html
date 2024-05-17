@@ -15,35 +15,45 @@
 </head>
 
 <body>
+
     <header class="header">
         <h1 class="has-text-white">Student Profile</h1>
         <nav>
-            <ul>
-                <li><a class="has-text-white" href="#basic-info">Basic Info</a></li>
-                <li><a class="has-text-white" href="#about-me">About Me</a></li>
-                <li><a class="has-text-white" href="#favorites">Favorites</a></li>
-                <!-- <li><a class="has-text-white" href="#questions">Questions</a></li> -->
-                <li><a class="has-text-white" href="#links">Links</a></li>
-            </ul>
+            <div>
+                <ul>
+                    <li> <button id="myBtn" class="has-text-white">Instructions</button></li>
+                    <li><a class="has-text-white" href="#basic-info">Basic Info</a></li>
+                    <li><a class="has-text-white" href="#about-me">About Me</a></li>
+                    <li><a class="has-text-white" href="#favorites">Favorites</a></li>
+                    <li><a class="has-text-white" href="#links-section">Links</a></li>
+                </ul>
+            </div>
+
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Welcome to our Page 🙃<br><br>
+                        Please use this page to introduce yourself <br>
+                        and share your favorite things with us!<br><br>
+                        Close to continue.➡️
+                    </p>
+                </div>
+            </div>
         </nav>
+
     </header>
     <section id="Name">
         <div class="section-detail">
             <div id="profile-picture">
                 <img id="profile-pic">
                 <input type="file" id="upload" onchange="_ReadImage(event)" />
-                <div id="status" ></div>
+                <div id="status"></div>
                 <label id="name-label">Enter Your Name</label>
                 <input class="input-style" type="text" id="name-input">
                 <button class="button is-link" id="name-btn">Submit</button>
-                </div>
+            </div>
         </div>
-        <!-- <div id="name-section" class="section-detail section-title primary-border">
-            <label id="name-label">Enter Your Name</label>
-            <input class="input-style ml-6" type="text" id="name-input">
-            <button class="button is-link" id="name-btn">Submit</button>
-        </div> -->
-
         </div>
     </section>
     <section id="basic-info">
@@ -53,23 +63,23 @@
                 <div id="age">
                     <label id="age-label">Age</label>
                     <input class="input-style mb-4" type="number" min="0" id="age-input">
-                    <button class="button is-link" id="age-btn">Submit</button>
+                    <button class="button is-link btn-action" id="age-btn">Submit</button>
                 </div>
                 <div id="birthday-section" class="birthday-date">
                     <label id="birthday-label">Birthday</label>
                     <input type="text" id="datepicker" class="form-control input-style mb-4" autocomplete="off">
-                    <button class="button is-link" id="birthday-btn">Submit</button>
+                    <button class="button is-link btn-action" id="birthday-btn">Submit</button>
                 </div>
 
                 <!-- HTML - Update Occupation div to read: -->
                 <div id="occupation-section">
                     <label id="occupation-label">Occupation</label>
                     <input class="input-style mb-4" type="text" id="occupation-input">
-                    <button class="button is-link" id="occupation-btn">Submit</button>
+                    <button class="button is-link btn-action" id="occupation-btn">Submit</button>
                 </div>
                 <div class="location mb-4">
                     <label>Location</label>
-                    <button class="button is-link" id="location-button">Submit</button>
+                    <button class="button is-link btn-action" id="location-button">Submit</button>
                     <div id="map"></div>
                 </div>
             </div>
@@ -79,38 +89,37 @@
         <div class="section-detail">
             <h2 class="section-title primary-border">About Me</h2>
             <div id="aboutme-section">
-                <!-- <label id="aboutme-label">About</label> -->
+                <label id="aboutme-label"></label>
                 <textarea class="text-style" rows="5" cols="25" id="aboutme-input" name="aboutme" required></textarea>
                 <!-- <input type="text" id="aboutme-input"> -->
                 <button class="button is-link" id="aboutme-btn">Submit</button>
             </div>
-        </div>
     </section>
     <section id="favorites">
         <div class="section-detail">
             <h2 class="section-title primary-border">Favorites</h2>
             <div class="favorites-group">
                 <div class="movie-section">
-                    <label>Movie</label>
+                    <label>Movies</label>
                     <input class="input-style mb-4" id="movie-input">
-                    <button class="button is-link" id="movie-button">Submit</button>
+                    <button class="button is-link btn-action" id="movie-button">Submit</button>
                     <div id="movie-title"></div>
                     <div id="movie-img" class="movie-image"></div>
                 </div>
                 <div id="book-section">
                     <label id="book-label">Book</label>
                     <input class="input-style mb-4" type="text" id="book-input">
-                    <button class="button is-link" id="book-btn">Submit</button>
+                    <button class="button is-link btn-action" id="book-btn">Submit</button>
                 </div>
                 <div id="artist-section">
                     <label id="artist-label">Artist</label>
                     <input class="input-style mb-4" type="text" id="artist-input">
-                    <button class="button is-link" id="artist-btn">Submit</button>
+                    <button class="button is-link btn-action" id="artist-btn">Submit</button>
                 </div>
                 <div id="meal-section">
                     <label id="meal-label">Meal</label>
                     <input class="input-style mb-3" type="text" id="meal-input">
-                    <button class="button is-link" id="meal-btn">Submit</button>
+                    <button class="button is-link btn-action" id="meal-btn">Submit</button>
                 </div>
     </section>
     <section id="links-section">
